@@ -12,13 +12,12 @@ class AlbumType(Enum):
 
 @dataclass
 class Track():
-	name:        str
-	number:      int
-	link:        str
-	album:       Optional['Album'] = None
-	lyrics_file: Optional[str]     = None
-
-	overwrite_embded: Optional[bool] = False
+	name:      str
+	number:    int
+	link:      str
+	album:     Optional['Album'] = None
+	lyrics:    Optional[str]     = None
+	overwrite: Optional[bool]    = False
 
 @dataclass
 class Album():
